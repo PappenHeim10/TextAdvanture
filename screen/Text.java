@@ -6,7 +6,6 @@ public enum Text {
     ANFANGSTEXT("Was möchtest du tun?"),
     ANTWORTTEXT("Bitte gib deine Antwort ein:");
     
-
     private final String text;
 
     Text(String text) {
