@@ -136,7 +136,9 @@ public class GamePanel extends JPanel {
 
     private void processInput(String input) {
         System.out.println("Eingabe: " + input);
-        eingabeListe.add(0, input);
+        if(!input.trim().equals("")){
+            eingabeListe.add(0, input);
+        }
 
         if (input.equalsIgnoreCase("exit")) {
             System.exit(0);
@@ -156,5 +158,5 @@ public class GamePanel extends JPanel {
             repaint();
         }
     }
-    
+
 }

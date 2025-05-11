@@ -2,6 +2,7 @@ package screen;
 
 public enum Text {
     // Text-Enum für die verschiedenen Textarten
+
     
     ANFANGSTEXT("Was möchtest du tun?"),
     ANTWORTTEXT("Bitte gib deine Antwort ein:");
