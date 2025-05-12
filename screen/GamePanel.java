@@ -10,9 +10,17 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import charakter.*;
+import util.*; // Importiere EnvLoader, falls du es benötigst
+
+import com.google.cloud.aiplatform.v1beta1.EndpointName;
+import com.google.cloud.aiplatform.v1beta1.PredictResponse;
+import com.google.cloud.aiplatform.v1beta1.PredictionServiceClient;
+import com.google.cloud.aiplatform.v1beta1.PredictionServiceSettings;
+import com.google.protobuf.Value;
+import com.google.protobuf.InvalidProtocolBufferException;
 
 public class GamePanel extends JPanel {
-    private Player player = new Player();
+    private Player player = new Player(); // Spieler-Instanz
     private int currentScreen = 0;
     private ArrayList<String> eingabeListe = new ArrayList<>();
     private JTextField inputField;
@@ -85,6 +93,7 @@ public class GamePanel extends JPanel {
         }
     }
 
+
     public GamePanel() {
         setLayout(null);
         
@@ -134,17 +143,20 @@ public class GamePanel extends JPanel {
         return playerStats;
     }
 
-    private void processInput(String input) {
+    private void processInput(String input){
         System.out.println("Eingabe: " + input);
+
         if(!input.trim().equals("")){
             eingabeListe.add(0, input);
         }
 
         if (input.equalsIgnoreCase("exit")) {
             System.exit(0);
+
         } else if (input.equalsIgnoreCase("change")) {
             currentScreen = 1;
             repaint();
+
         }else if(input.equalsIgnoreCase("Feuerball")){
             currentScreen = 2;
             boolean success = player.useMana(5);
@@ -154,6 +166,7 @@ public class GamePanel extends JPanel {
                 eingabeListe.add(0, "Nicht genügend Mana!");
             }
             repaint();
+
         }else {
             repaint();
         }

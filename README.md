@@ -1,40 +1,40 @@
-# Text Adventure Game
+# Text Adventure Spiel
 
-This is a simple text adventure game written in Java. The game presents the player with a scenario and prompts them to make choices. The player's choices affect the outcome of the game.
+Dies ist ein einfaches Text Adventure Spiel, geschrieben in Java. Das Spiel präsentiert dem Spieler ein Szenario und fordert ihn auf, Entscheidungen zu treffen. Die Entscheidungen des Spielers beeinflussen den Ausgang des Spiels.
 
-## Getting Started
+## Erste Schritte
 
-### Prerequisites
+### Voraussetzungen
 
-*   Java Development Kit (JDK) 8 or higher
+*   Java Development Kit (JDK) 8 oder höher
 
 ### Installation
 
-1.  **Clone the repository:**
+1.  **Repository klonen:**
 
     ```bash
     git clone <repository_url>
     ```
 
-    Replace `<repository_url>` with the actual URL of your Git repository.
+    Ersetze `<repository_url>` durch die tatsächliche URL deines Git-Repositorys.
 
-2.  **Navigate to the project directory:**
+2.  **In das Projektverzeichnis navigieren:**
 
     ```bash
     cd TextAdvanture
     ```
 
-3.  **Compile the code:**
+3.  **Code kompilieren:**
 
     ```bash
     javac Main.java
     ```
 
-    This will compile all the necessary Java files.
+    Dies kompiliert alle notwendigen Java-Dateien.
 
-### Running the Game
+### Spiel starten
 
-Execute the compiled `Main` class:
+Führe die kompilierte `Main`-Klasse aus:
 
 ```bash
-java Main
+java MyProg
