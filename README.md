@@ -1,3 +1,8 @@
+# Work in Progress
+ 
+Das Spiel ist noch lange nicht fertig, aber ich freue mich über jeden Beitrag :)
+
+
 # Text Adventure Spiel
 
 Dies ist ein einfaches Text Adventure Spiel, geschrieben in Java. Das Spiel präsentiert dem Spieler ein Szenario und fordert ihn auf, Entscheidungen zu treffen. Die Entscheidungen des Spielers beeinflussen den Ausgang des Spiels.
